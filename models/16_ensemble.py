@@ -1,16 +1,3 @@
-"""models/16_ensemble.py
-
-Create an ensemble CSV by averaging Transport_Cost from two model outputs.
-
-Usage (defaults assume your files live in the `output/` folder):
-	python models/16_ensemble.py
-	python models/16_ensemble.py --a output/gradient_boosting_tuned_3.csv \
-		--b output/random_forest_tuned_3.csv --out output/ensemble.csv
-
-The script merges on `Hospital_Id` (outer join), averages values when both
-are present, and writes `Hospital_Id,Transport_Cost` to the output path.
-"""
-
 from __future__ import annotations
 
 import argparse
